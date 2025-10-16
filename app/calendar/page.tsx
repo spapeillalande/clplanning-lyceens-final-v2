@@ -1,4 +1,4 @@
-import { parseICS, formatDateRange } from "@/lib/ics";
+import { parseICS, formatDateRange } from "../../lib/ics";
 
 async function getIcsText(): Promise<string> {
   const res = await fetch("/calendar/demo.ics", { cache: "no-store" });
